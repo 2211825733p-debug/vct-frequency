@@ -1,0 +1,14 @@
+{
+  "name": "vct-the-champions-frequency",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A six-year VCT anthem archive, built around the official spark emblem.",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

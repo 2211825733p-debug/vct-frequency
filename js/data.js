@@ -1,0 +1,190 @@
+/**
+ * VCT / THE CHAMPIONS FREQUENCY
+ * Six championship anthems, one emblem.
+ *
+ * Audio files are 30-second official promotional previews sourced from
+ * Apple Music. Replace the files in /assets/audio with licensed full
+ * masters for production use.
+ */
+
+export const TRACKS = [
+  {
+    id: '2021',
+    index: 1,
+    year: '2021',
+    city: 'BERLIN',
+    cityZh: '柏林',
+    country: 'DE',
+    title: 'DIE FOR YOU',
+    lines: ['DIE FOR', 'YOU'],
+    motif: 'THE VOW',
+    motifZh: '誓言',
+    tagline: 'A promise, held under the lights.',
+    artist: 'Grabbitz',
+    credit: 'VALORANT Music & Grabbitz',
+    released: '2021.11.22',
+    coordinates: '52.5200° N / 13.4050° E',
+    listenUrl: 'https://music.apple.com/us/album/die-for-you/1833372288?i=1833372290',
+    audio: 'assets/audio/2021-die-for-you.m4a',
+    note: '一首把誓言压在胸腔里的歌。主歌像空场馆里仅剩的那盏灯，副歌亮起时，所有人都知道自己在为谁而战。',
+    duration: 30,
+    fx: {
+      mode: 'dust',
+      primary: '#ff3b45',
+      secondary: '#ff8b72',
+      tertiary: '#7a1018',
+      ink: '#080506',
+      glow: 'radial-gradient(circle at 60% 45%, rgba(255, 59, 69, 0.16), transparent 58%)'
+    }
+  },
+  {
+    id: '2022',
+    index: 2,
+    year: '2022',
+    city: 'ISTANBUL',
+    cityZh: '伊斯坦布尔',
+    country: 'TR',
+    title: 'FIRE AGAIN',
+    lines: ['FIRE', 'AGAIN'],
+    motif: 'REKINDLE',
+    motifZh: '复燃',
+    tagline: 'The fire comes from underneath.',
+    artist: 'Ashnikko',
+    credit: 'VALORANT Music & Ashnikko',
+    released: '2022.08.22',
+    coordinates: '41.0082° N / 28.9784° E',
+    listenUrl: 'https://music.apple.com/us/album/fire-again-feat-ashnikko/1833384524?i=1833384526',
+    audio: 'assets/audio/2022-fire-again.m4a',
+    note: '火不是被重新点燃的，是从废墟底下翻上来的。Ashnikko 的声音切开看台，把每一次失败都变成下一次起跑。',
+    duration: 30,
+    fx: {
+      mode: 'ember',
+      primary: '#ff6a1f',
+      secondary: '#ffc15a',
+      tertiary: '#7d240b',
+      ink: '#090503',
+      glow: 'radial-gradient(circle at 58% 58%, rgba(255, 106, 31, 0.18), transparent 62%)'
+    }
+  },
+  {
+    id: '2023',
+    index: 3,
+    year: '2023',
+    city: 'LOS ANGELES',
+    cityZh: '洛杉矶',
+    country: 'US',
+    title: 'TICKING AWAY',
+    lines: ['TICKING', 'AWAY'],
+    motif: 'COUNTDOWN',
+    motifZh: '读秒',
+    tagline: 'Every second is a downbeat.',
+    artist: 'Grabbitz & bbno$',
+    credit: 'VALORANT Music, Grabbitz & bbno$',
+    released: '2023.07.31',
+    coordinates: '34.0522° N / 118.2437° W',
+    listenUrl: 'https://music.apple.com/us/album/ticking-away/1833385237?i=1833385238',
+    audio: 'assets/audio/2023-ticking-away.m4a',
+    note: '时间被切成十六分音符。钟摆、心跳、赛点倒计时叠在同一条线上，bbno$ 的段落像一记突然加速的快攻。',
+    duration: 30,
+    fx: {
+      mode: 'clock',
+      primary: '#c7ff39',
+      secondary: '#66f2a8',
+      tertiary: '#31591d',
+      ink: '#060805',
+      glow: 'radial-gradient(circle at 55% 50%, rgba(199, 255, 57, 0.13), transparent 60%)'
+    }
+  },
+  {
+    id: '2024',
+    index: 4,
+    year: '2024',
+    city: 'SEOUL',
+    cityZh: '首尔',
+    country: 'KR',
+    title: 'SUPERPOWER',
+    lines: ['SUPER', 'POWER'],
+    motif: 'CHROME',
+    motifZh: '镀铬',
+    tagline: 'Confidence, polished to a mirror.',
+    artist: 'KISS OF LIFE & Mark Tuan',
+    credit: 'VALORANT Music, KISS OF LIFE & Mark Tuan',
+    released: '2024.07.24',
+    coordinates: '37.5665° N / 126.9780° E',
+    listenUrl: 'https://music.apple.com/us/album/superpower/1833385019?i=1833385020',
+    audio: 'assets/audio/2024-superpower.m4a',
+    note: '一首不需要解释的登场曲。首尔的灯光被压成镀铬表面，KISS OF LIFE 和 Mark Tuan 把自信唱成了硬通货。',
+    duration: 30,
+    fx: {
+      mode: 'chrome',
+      primary: '#79e8ff',
+      secondary: '#e7fbff',
+      tertiary: '#1d6073',
+      ink: '#05090b',
+      glow: 'radial-gradient(circle at 63% 44%, rgba(121, 232, 255, 0.15), transparent 58%)'
+    }
+  },
+  {
+    id: '2025',
+    index: 5,
+    year: '2025',
+    city: 'PARIS',
+    cityZh: '巴黎',
+    country: 'FR',
+    title: 'LAST SHOT',
+    lines: ['LAST', 'SHOT'],
+    motif: 'ONE TAKE',
+    motifZh: '孤注',
+    tagline: 'One breath. One decision.',
+    artist: 'templuv & 347aidan',
+    credit: 'VALORANT Music, templuv & 347aidan',
+    released: '2025.09.09',
+    coordinates: '48.8566° N / 2.3522° E',
+    listenUrl: 'https://music.apple.com/us/album/last-shot/1832097285?i=1832097286',
+    audio: 'assets/audio/2025-last-shot.m4a',
+    note: '整首歌都停在扣下扳机的前一秒。巴黎的最后一发不需要回声，它只需要一次准确的呼吸。',
+    duration: 30,
+    fx: {
+      mode: 'tracer',
+      primary: '#6e8dff',
+      secondary: '#d7e2ff',
+      tertiary: '#1f2e70',
+      ink: '#05070d',
+      glow: 'radial-gradient(circle at 58% 46%, rgba(110, 141, 255, 0.16), transparent 60%)'
+    }
+  },
+  {
+    id: '2026',
+    index: 6,
+    year: '2026',
+    city: 'SHANGHAI',
+    cityZh: '上海',
+    country: 'CN',
+    title: 'IF THE SUN BURNS OUT TONIGHT',
+    listTitle: 'SUN BURNS OUT',
+    titleZh: '炽日将烬',
+    lines: ['IF THE SUN', 'BURNS OUT', 'TONIGHT'],
+    motif: 'AFTERGLOW',
+    motifZh: '余烬',
+    tagline: 'The last light is still a light.',
+    artist: 'Grabbitz, Oli Sykes & Courtney LaPlante',
+    credit: 'VALORANT Music, Grabbitz, Oli Sykes & Courtney LaPlante',
+    released: '2026.09.16',
+    coordinates: '31.2304° N / 121.4737° E',
+    listenUrl: 'https://music.apple.com/us/album/if-the-sun-burns-out-tonight/6802396880?i=6802397043',
+    audio: 'assets/audio/2026-ashes-of-the-sun.m4a',
+    note: '太阳熄灭了，场馆还亮着。Oli Sykes 和 Courtney LaPlante 把告别唱成万人大合唱，余烬在观众席上方停了很久。',
+    duration: 30,
+    fx: {
+      mode: 'eclipse',
+      primary: '#ffad42',
+      secondary: '#ff5b2b',
+      tertiary: '#6b3210',
+      ink: '#080604',
+      glow: 'radial-gradient(circle at 63% 47%, rgba(255, 173, 66, 0.19), transparent 58%)'
+    }
+  }
+];
+
+export const DEFAULT_TRACK_ID = '2026';
+export const ARCHIVE_TITLE = 'THE CHAMPIONS FREQUENCY';

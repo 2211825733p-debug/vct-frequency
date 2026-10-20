@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>VCT / THE CHAMPIONS FREQUENCY</title>
+  <meta name="description" content="把 2021—2026 六届 VALORANT 全球冠军赛主题曲，调成同一个频率。一台可以听的 VCT 声音档案。">
+  <meta name="theme-color" content="#080604">
+  <meta property="og:title" content="VCT / THE CHAMPIONS FREQUENCY">
+  <meta property="og:description" content="Six anthems. Six cities. One emblem. 2021—2026 VALORANT Champions Tour anthem archive.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VCT / THE CHAMPIONS FREQUENCY">
+  <meta name="twitter:description" content="Six anthems. Six cities. One emblem.">
+  <meta name="twitter:image" content="assets/img/og-cover.jpg">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon.png">
+  <link rel="preload" href="assets/fonts/anton-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/space-grotesk-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/experience.css">
+</head>
+<body class="is-gated" data-theme="2026" data-audio="idle">
+  <a class="skip-link" href="#main">跳到主内容</a>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       ENTRY GATE
+  ────────────────────────────────────────────────────────────── -->
+  <section class="gate" id="gate" aria-labelledby="gateTitle">
+    <div class="gate__hairlines" aria-hidden="true"></div>
+
+    <header class="gate__top">
+      <div class="brand-lockup brand-lockup--gate">
+        <span class="spark spark--sm" aria-hidden="true"></span>
+        <span class="brand-lockup__word">VCT</span>
+        <span class="brand-lockup__sub">ANTHEM ARCHIVE</span>
+      </div>
+      <p class="gate__top-meta">VALORANT CHAMPIONS TOUR <span>/</span> 2021—2026</p>
+      <p class="gate__top-status"><span class="status-dot" aria-hidden="true"></span> AUDIO FEED / STANDBY</p>
+    </header>
+
+    <div class="gate__main">
+      <div class="gate__copy">
+        <p class="micro micro--accent"><span class="micro__rule" aria-hidden="true"></span> SIX SIGNALS, ONE EMBLEM</p>
+        <h1 class="gate__title" id="gateTitle" aria-label="The Champions Frequency">
+          <span class="gate__title-the">THE</span>
+          <span class="gate__title-big">CHAMPIONS</span>
+          <span class="gate__title-outline">FREQUENCY</span>
+        </h1>
+        <p class="gate__lede">把六年的冠军赛，调成同一个频率。<br>这不是一张播放列表，是一台需要被启动的仪器。</p>
+
+        <ol class="gate__years" aria-label="六届全球冠军赛">
+          <li><span>2021</span><span>DIE FOR YOU</span><span>BERLIN</span></li>
+          <li><span>2022</span><span>FIRE AGAIN</span><span>ISTANBUL</span></li>
+          <li><span>2023</span><span>TICKING AWAY</span><span>LOS ANGELES</span></li>
+          <li><span>2024</span><span>SUPERPOWER</span><span>SEOUL</span></li>
+          <li><span>2025</span><span>LAST SHOT</span><span>PARIS</span></li>
+          <li class="is-current"><span>2026</span><span>IF THE SUN BURNS OUT TONIGHT</span><span>SHANGHAI</span></li>
+        </ol>
+
+        <div class="gate__cta-row">
+          <button class="enter" id="enterButton" type="button">
+            <span class="enter__mark" aria-hidden="true"><span class="spark spark--xs"></span></span>
+            <span class="enter__copy">
+              <strong id="enterLabel">按此接通信号</strong>
+              <small id="enterSub">ENTER WITH SOUND</small>
+            </span>
+            <span class="enter__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.5"/></svg>
+            </span>
+            <span class="enter__progress" aria-hidden="true"><i id="gateProgress"></i></span>
+          </button>
+          <p class="gate__note" id="gateNote" aria-live="polite">2026 上海 · 官方试听片段 · 建议佩戴耳机</p>
+        </div>
+
+        <div class="gate__ready" aria-hidden="true">
+          <span class="gate__ready-label">PRELOAD</span>
+          <span class="gate__ready-track" id="gateReadyTicks"></span>
+          <span class="gate__ready-value" id="gateReadyValue">00 / 06</span>
+        </div>
+      </div>
+
+      <div class="gate__art" aria-hidden="true">
+        <div class="gate__art-year">26</div>
+        <div class="gate__art-ring">
+          <svg viewBox="0 0 560 560" class="orbit orbit--gate">
+            <defs>
+              <path id="gateOrbitPath" d="M280,280 m-214,0 a214,214 0 1,1 428,0 a214,214 0 1,1 -428,0"></path>
+            </defs>
+            <circle cx="280" cy="280" r="214" class="orbit__line"></circle>
+            <circle cx="280" cy="280" r="246" class="orbit__line orbit__line--faint"></circle>
+            <text class="orbit__text">
+              <textPath href="#gateOrbitPath" startOffset="0">VCT · VALORANT CHAMPIONS TOUR · ANTHEM ARCHIVE · 2021—2026 · </textPath>
+            </text>
+            <g class="orbit__ticks">
+              <path d="M280 18v14M280 528v14M18 280h14M528 280h14"></path>
+              <path d="M280 52v7M280 501v7M52 280h7M501 280h7"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="gate__art-mark">
+          <span class="gate__art-glow"></span>
+          <span class="mark-fill"></span>
+        </div>
+        <div class="gate__art-caption">
+          <span>EST. 2021</span>
+          <span class="gate__art-caption-rule"></span>
+          <span>WORLD STAGE</span>
+        </div>
+      </div>
+    </div>
+
+    <footer class="gate__bottom">
+      <p>2021 BERLIN <span>/</span> 2022 ISTANBUL <span>/</span> 2023 LOS ANGELES</p>
+      <p class="gate__bottom-center">2024 SEOUL <span>/</span> 2025 PARIS <span>/</span> 2026 SHANGHAI</p>
+      <p>FAN-MADE CONCEPT <span>/</span> RIOT GAMES TRADEMARK</p>
+    </footer>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       BROADCAST CONSOLE
+  ────────────────────────────────────────────────────────────── -->
+  <div class="site" id="site" inert aria-hidden="true">
+    <canvas class="ambient" id="ambientCanvas" aria-hidden="true"></canvas>
+    <div class="site__wash" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="brand-lockup" aria-label="VCT Anthem Archive">
+        <span class="spark spark--sm" aria-hidden="true"></span>
+        <span class="brand-lockup__word">VCT</span>
+        <span class="brand-lockup__sub">ANTHEM<br>ARCHIVE</span>
+      </div>
+
+      <p class="topbar__descriptor">VALORANT CHAMPIONS TOUR <span>/</span> OFFICIAL ANTHEM ARCHIVE <span>/</span> 2021—2026</p>
+
+      <div class="topbar__right">
+        <p class="topbar__clock" id="shanghaiClock" aria-label="上海时间">SHANGHAI / --:--:--</p>
+        <p class="topbar__signal" id="signalStatus"><span class="status-dot" aria-hidden="true"></span> <span id="signalText">ON AIR</span></p>
+        <button class="text-button topbar__archive" id="archiveButton" type="button" aria-expanded="false" aria-controls="archiveDialog">
+          <span>ALL SIGNALS</span>
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.3"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="console" id="main">
+      <aside class="index" aria-label="冠军赛主题曲索引">
+        <header class="index__head">
+          <p class="micro">SIGNAL INDEX</p>
+          <p class="index__count"><span id="indexCount">06</span> TRANSMISSIONS</p>
+        </header>
+
+        <ol class="signal-list" id="signalList"></ol>
+
+        <footer class="index__foot">
+          <div class="index__mark" aria-hidden="true"><span class="spark spark--micro"></span></div>
+          <p>CHAMPIONS TOUR<br>2021—2026</p>
+          <p class="index__note">30-second official previews.<br>Select a year to retune.</p>
+        </footer>
+      </aside>
+
+      <section class="stage" id="stage" aria-labelledby="trackTitle">
+        <div class="stage__frame" aria-hidden="true">
+          <span class="frame-corner frame-corner--tl"></span>
+          <span class="frame-corner frame-corner--tr"></span>
+          <span class="frame-corner frame-corner--bl"></span>
+          <span class="frame-corner frame-corner--br"></span>
+        </div>
+
+        <div class="stage__readout">
+          <p><span class="blink" aria-hidden="true"></span> NOW TRANSMITTING</p>
+          <p id="stageIssue">ISSUE 06 / SHANGHAI</p>
+        </div>
+
+        <span class="stage__year" id="stageYear" aria-hidden="true">2026</span>
+
+        <div class="stage__visual">
+          <button class="mark" id="markButton" type="button" aria-label="暂停播放">
+            <svg viewBox="0 0 560 560" class="orbit orbit--stage" aria-hidden="true">
+              <defs>
+                <path id="stageOrbitPath" d="M280,280 m-222,0 a222,222 0 1,1 444,0 a222,222 0 1,1 -444,0"></path>
+              </defs>
+              <circle cx="280" cy="280" r="222" class="orbit__line"></circle>
+              <circle cx="280" cy="280" r="252" class="orbit__line orbit__line--faint"></circle>
+              <text class="orbit__text">
+                <textPath href="#stageOrbitPath" startOffset="0">VCT · CHAMPIONS FREQUENCY · SIX SIGNALS · ONE EMBLEM · </textPath>
+              </text>
+              <g class="orbit__ticks">
+                <path d="M280 26v12M280 522v12M26 280h12M522 280h12"></path>
+                <path d="M280 58v6M280 496v6M58 280h6M496 280h6"></path>
+              </g>
+            </svg>
+
+            <span class="mark__halo"></span>
+            <span class="mark__body" id="markBody">
+              <span class="mark__shard mark__shard--a"><span class="mark-fill"></span></span>
+              <span class="mark__shard mark__shard--b"><span class="mark-fill"></span></span>
+              <span class="mark__shard mark__shard--c"><span class="mark-fill"></span></span>
+            </span>
+            <span class="mark__pulse"></span>
+            <span class="mark__label" id="markLabel">HOLD</span>
+          </button>
+        </div>
+
+        <div class="stage__copy">
+          <p class="stage__eyebrow">
+            <span class="stage__eyebrow-main" id="stageCity">SHANGHAI</span>
+            <span class="slash" aria-hidden="true">/</span>
+            <span id="stageYearLabel">2026</span>
+            <span class="stage__motif"><span class="motif-rule" aria-hidden="true"></span><span id="stageMotif">AFTERGLOW / 余烬</span></span>
+          </p>
+
+          <h1 class="track-title" id="trackTitle" aria-label="IF THE SUN BURNS OUT TONIGHT">
+            <span class="title-line">IF THE SUN</span>
+            <span class="title-line">BURNS OUT</span>
+            <span class="title-line">TONIGHT</span>
+          </h1>
+
+          <div class="track-caption">
+            <p class="track-caption__zh" id="trackMotifZh">炽日将烬</p>
+            <p class="track-caption__tag" id="trackTagline">The last light is still a light.</p>
+            <p class="track-caption__credit" id="trackCredit">VALORANT Music, Grabbitz, Oli Sykes &amp; Courtney LaPlante</p>
+          </div>
+        </div>
+
+        <div class="stage__foot">
+          <span>OFFICIAL PREVIEW / 30 SEC</span>
+          <span class="stage__foot-rule" aria-hidden="true"></span>
+          <span>CLICK EMBLEM TO PAUSE</span>
+          <span class="stage__foot-code" id="stageFileCode">TXR_2026_06</span>
+        </div>
+      </section>
+
+      <aside class="dossier" aria-label="曲目档案">
+        <header class="dossier__head">
+          <p class="micro">TRANSMISSION FILE</p>
+          <p><span id="fileNumber">06</span> <span class="dossier__of">/ 06</span></p>
+        </header>
+
+        <div class="dossier__scroll">
+          <div class="dossier__city-wrap">
+            <h2 class="dossier__city" id="dossierCity">SHANGHAI</h2>
+            <p class="dossier__city-zh" id="dossierCityZh">上海</p>
+            <p class="dossier__coords" id="dossierCoords">31.2304° N / 121.4737° E</p>
+          </div>
+
+          <p class="dossier__note" id="dossierNote">太阳熄灭了，场馆还亮着。Oli Sykes 和 Courtney LaPlante 把告别唱成万人大合唱，余烬在观众席上方停了很久。</p>
+
+          <dl class="dossier__data">
+            <div>
+              <dt>RELEASED</dt>
+              <dd id="metaReleased">2026.09.16</dd>
+            </div>
+            <div>
+              <dt>ARTIST</dt>
+              <dd id="metaArtist">Grabbitz, Oli Sykes &amp; Courtney LaPlante</dd>
+            </div>
+            <div>
+              <dt>PREVIEW</dt>
+              <dd>00:30 / LOOP</dd>
+            </div>
+            <div>
+              <dt>SOURCE</dt>
+              <dd>OFFICIAL AUDIO PREVIEW</dd>
+            </div>
+          </dl>
+
+          <div class="dossier__stamp" aria-hidden="true">
+            <span class="dossier__stamp-mark"><span class="spark spark--micro"></span></span>
+            <span>VCT / OFFICIAL<br>PREVIEW CUT</span>
+            <span class="dossier__stamp-sec">30<small>SEC</small></span>
+          </div>
+        </div>
+
+        <footer class="dossier__foot">
+          <p class="dossier__tagline" id="dossierTagline">The last light is still a light.</p>
+          <a class="dossier__listen" id="listenLink" href="https://music.apple.com/us/album/if-the-sun-burns-out-tonight/6802396880?i=6802397043" target="_blank" rel="noopener noreferrer" aria-label="在 Apple Music 收听完整版：IF THE SUN BURNS OUT TONIGHT">
+            <span>FULL TRACK / APPLE MUSIC</span>
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.3"/></svg>
+          </a>
+          <button class="text-button" id="archiveButtonAlt" type="button" aria-expanded="false" aria-controls="archiveDialog">
+            <span>OPEN THE ARCHIVE</span>
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.3"/></svg>
+          </button>
+        </footer>
+      </aside>
+    </main>
+
+    <footer class="transport" aria-label="播放器">
+      <div class="transport__id">
+        <button class="play-button" id="playButton" type="button" aria-label="暂停">
+          <svg class="icon-play" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5.5 19 12 8 18.5V5.5Z" fill="currentColor"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5h3v14H8zM14 5h3v14h-3z" fill="currentColor"/></svg>
+          <span class="play-button__ring" aria-hidden="true"></span>
+        </button>
+        <div class="transport__title-wrap">
+          <p class="transport__eyebrow"><span class="status-dot" aria-hidden="true"></span> <span id="transportStatus">PREVIEW READY</span></p>
+          <p class="transport__title" id="nowTitle">IF THE SUN BURNS OUT TONIGHT</p>
+          <p class="transport__meta" id="nowMeta">SHANGHAI / 2026 / 00:30</p>
+        </div>
+      </div>
+
+      <div class="transport__timeline">
+        <div class="timeline__meta">
+          <span id="elapsedTime">00:00</span>
+          <span class="timeline__mid">OFFICIAL PREVIEW <i aria-hidden="true"></i> LOOP</span>
+          <span id="totalTime">00:30</span>
+        </div>
+        <div class="wave" id="seekBar" role="slider" tabindex="0" aria-label="播放进度" aria-valuemin="0" aria-valuemax="30" aria-valuenow="0" aria-valuetext="00:00 / 00:30">
+          <canvas class="wave__canvas wave__canvas--base" id="waveBase"></canvas>
+          <div class="wave__progress" id="waveProgress">
+            <canvas class="wave__canvas wave__canvas--front" id="waveFront"></canvas>
+          </div>
+          <span class="wave__playhead" id="wavePlayhead" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <div class="transport__utility">
+        <div class="transport__buttons">
+          <button class="square-button" id="prevButton" type="button" aria-label="上一首">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 5v14M18 6.5 9.5 12 18 17.5v-11Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="square-button" id="nextButton" type="button" aria-label="下一首">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 5v14M6 6.5 14.5 12 6 17.5v-11Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="square-button" id="muteButton" type="button" aria-label="静音" aria-pressed="false">
+            <svg class="icon-volume" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 9.5v5h4l5 4v-13l-5 4H4Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path class="volume-waves" d="M16 8.5a5 5 0 0 1 0 7M18.8 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path class="volume-slash" d="m16 9 5 6" stroke="currentColor" stroke-width="1.3"/></svg>
+          </button>
+          <label class="volume">
+            <span class="sr-only">音量</span>
+            <input id="volumeSlider" type="range" min="0" max="100" value="72" aria-label="音量">
+          </label>
+          <button class="square-button square-button--keys" id="keysButton" type="button" aria-label="键盘快捷键" aria-expanded="false" aria-controls="keyPopover">?</button>
+        </div>
+        <p class="transport__keys">KEYS 1—6 / SPACE / ← →</p>
+      </div>
+
+      <div class="key-popover" id="keyPopover" hidden>
+        <p class="micro">CONTROL SURFACE</p>
+        <dl>
+          <div><dt>1—6</dt><dd>切换届数</dd></div>
+          <div><dt>SPACE</dt><dd>播放 / 暂停</dd></div>
+          <div><dt>← →</dt><dd>快退 / 快进 5 秒</dd></div>
+          <div><dt>M</dt><dd>静音</dd></div>
+          <div><dt>A</dt><dd>打开档案</dd></div>
+        </dl>
+      </div>
+    </footer>
+
+    <div class="audio-error" id="audioError" role="alert" hidden>
+      <p>音频载入失败。请确认 <code>assets/audio</code> 内的六个预览文件可访问，然后刷新页面。</p>
+      <button id="audioRetry" type="button">RETRY / 重试</button>
+    </div>
+    <div class="sweep" aria-hidden="true"><span></span></div>
+    <div class="sr-only" id="liveRegion" role="status" aria-live="polite"></div>
+  </div>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       ARCHIVE OVERLAY
+  ────────────────────────────────────────────────────────────── -->
+  <dialog class="archive" id="archiveDialog" aria-labelledby="archiveTitle">
+    <div class="archive__panel">
+      <header class="archive__head">
+        <div>
+          <p class="micro micro--accent"><span class="micro__rule" aria-hidden="true"></span> VCT / TRANSMISSION ARCHIVE</p>
+          <h2 id="archiveTitle">SIX SIGNALS.<br><span>ONE EMBLEM.</span></h2>
+        </div>
+        <button class="close-button" id="archiveClose" type="button" aria-label="关闭档案">
+          <span>CLOSE</span>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19" stroke="currentColor" stroke-width="1.3"/></svg>
+        </button>
+      </header>
+
+      <p class="archive__intro">六届全球冠军赛，六座城市，六首把场馆变成同一颗心脏的歌。选择一段信号，让徽记替你重新调频。</p>
+
+      <div class="archive__list" id="archiveList"></div>
+
+      <footer class="archive__foot">
+        <div>
+          <p>AUDIO / OFFICIAL 30-SECOND PREVIEWS</p>
+          <p>All songs and marks belong to Riot Games and the respective artists.<br>Independent fan-made concept. Not affiliated with or endorsed by Riot Games.</p>
+        </div>
+        <div class="archive__foot-right">
+          <p>VALORANT CHAMPIONS TOUR<br>2021—2026</p>
+          <span class="spark spark--sm" aria-hidden="true"></span>
+        </div>
+      </footer>
+    </div>
+  </dialog>
+
+  <div class="boot-error" id="bootError" hidden>
+    <div>
+      <p class="micro">SIGNAL INTERRUPTED</p>
+      <h2>这台仪器需要 JavaScript 与本地服务器。</h2>
+      <p>请在项目目录运行 <code>node server.mjs</code>，再通过终端显示的本地地址打开。</p>
+    </div>
+  </div>
+
+  <noscript>
+    <style>
+      .gate, .site, .grain { display: none !important; }
+      .boot-error { display: grid !important; }
+    </style>
+  </noscript>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
