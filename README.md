@@ -3,6 +3,9 @@
 > 把 2021—2026 六届 VALORANT 全球冠军赛主题曲，调成同一个频率。
 > A fan-made listening instrument built around the official VCT spark.
 
+**在线地址：** <https://2211825733p-debug.github.io/vct-frequency/>  
+**源码仓库：** <https://github.com/2211825733p-debug/vct-frequency>
+
 这不是一个「Hero + 卡片」式的音乐专题页，而是一台被拆开摆在桌面上的 VCT 广播仪器。开场点击接通信号后，2026 上海的主题曲《炽日将烬》立即开始播放；之后每一次换台，都会同时换掉颜色、环境、粒子运动、字号节奏和整份曲目档案。
 
 ![VCT / THE CHAMPIONS FREQUENCY — desktop console](./preview/console-2026.jpg)
@@ -16,7 +19,7 @@
 需要 Node.js 18+。项目没有 npm 依赖，不需要安装。
 
 ```bash
-cd D:\dsh\vct-frequency
+cd vct-frequency
 node server.mjs
 ```
 
@@ -150,6 +153,20 @@ vct-frequency/
 - 动效：只使用 `transform` / `opacity` 做 UI 过渡；背景场由 Canvas 控制；支持 `prefers-reduced-motion`
 - 无障碍：跳转链接、可见 focus ring、slider 键盘操作、动态 `aria-live`、`aria-current`、44px 移动端触控目标、可读对比度
 - 反 AI 模板自审：`P5 H5 E4 S5 R4 V5`（Philosophy / Hierarchy / Execution / Specificity / Restraint / Variety）
+
+---
+
+## 部署
+
+当前线上版本托管在 **GitHub Pages**：
+
+- 公开仓库：<https://github.com/2211825733p-debug/vct-frequency>
+- 线上地址：<https://2211825733p-debug.github.io/vct-frequency/>
+- 发布方式：`main` 分支根目录静态发布，已启用 `.nojekyll`
+- 更新方式：提交并推送到 `main`，Pages 会自动重新构建
+- 静态站点不依赖 `server.mjs`；这个 Node 文件只用于本地预览
+
+自定义域名可以后续在仓库的 Pages 设置里绑定 `CNAME`，当前使用 GitHub 提供的 `*.github.io` 子路径。
 
 ---
 

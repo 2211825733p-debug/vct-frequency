@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://2211825733p-debug.github.io/vct-frequency/sitemap.xml
